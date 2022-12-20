@@ -1,0 +1,211 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+.navbar{
+    display: flex;
+    justify-content: center;
+    background-color: slateblue;
+    position: sticky;
+    top: 0;
+}
+.navbar ul{
+    display: flex;
+    list-style: none;
+    margin: 20px 0px;
+}
+.navbar ul li{
+    font-size: 20px;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: white;
+    padding: 8px 25px;
+}
+.navbar ul li a:hover{
+    background-color: whitesmoke;
+    color: black;
+    box-shadow: 0 0 10px whitesmoke;
+}
+#home{
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.4);
+    height: 840px;
+    justify-content: center;
+    text-align: left;
+    color: whitesmoke;
+    font-size: 40px;
+}
+#home::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: url('file:///G:/Projects/TanvirPortfolio.blog/img2.jpg') no-repeat center center/cover;
+    height: 900px;
+    width: 100%;
+    z-index: -1;
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid whitesmoke;
+    width: fit-content ;
+    align-items: center;
+    position: absolute;
+}
+.headings{
+    font-size: 3rem;
+    text-align: center;
+    margin: 40px 40px;
+}
+.btn{
+    padding: 10px 10px;
+    background-color: transparent;
+    border: 1px solid whitesmoke;
+    font-size: 15px;
+    color: whitesmoke;
+    outline: none;
+    transition: .6s ease;
+}
+.btn:hover{
+    cursor: pointer;
+    background-color: blue;
+    box-shadow: 0 0 5px black;
+    font-weight: bold;
+}
+#about{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 20px 20px;
+    margin bottom: 50px;
+    background-color:whitesmoke;
+    font-size: 16px;
+    border: 1px solid white;
+}
+#pic{
+    display: flex;
+}
+#pic img{
+    width: 575px;
+    height: 400px;
+    padding: 2px 15px;
+}
+#intro{
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    padding: 10px 10px;
+    box-sizing: border-box;
+    font-size: 16px;
+    
+}
+#intro h2{
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+#portfolio{
+    display: flex;
+    flex-direction: column;
+    background-color: lavender;
+    color: black;
+    font-weight: bold;
+    align-items: center;
+    padding: 20px;
+}
+.gallery{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    box-sizing: border-box;
+}
+.gallery img{
+    width: 315px;
+    height: 260px;
+    margin: 10px;
+}
+#services{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+.row{
+    display:block;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    float:left;
+    display: flex;
+}
+.box{
+    display: flex;
+    flex-direction: column;
+    width: 360px;
+    height: 450px;
+    border: 1px solid black;
+    background-color:lemonchiffon;
+    margin: 10px;
+    align-items: center;
+    text-align: justify;
+    padding:10px;
+    border-radius: 15px;
+    background-size: 100% 200%;
+    background: -moz-linear-gradient(to top, rgb(255,45,45)50%, white 50%);
+    transition: all .8s;
+    }
+   
+.box:hover{
+    background-position: left bottom;
+    color: blue;
+    border: none;
+    box-shadow: 0 0 20px rgb(255,45,45);
+}
+#contact{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    background-color: rgba(0, 0, 0, 0.9);
+    color: whitesmoke;
+    padding: 20px;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    align-items: center;
+    margin: 20px 0px;
+}
+.input{
+    padding: 12px;
+    margin: 15px;
+    width: 30%;
+    border: none;
+    outline: none;
+}
+#msg{
+    width: 20%;
+    padding: 10px;
+    margin: 15px;
+    border: none;
+    outline: none;
+}
+#send{
+    padding: 15px;
+    width: 10%;
+    margin: 40px;
+    border: none;
+    outline: none;
+    
+}
+#send:hover{
+    cursor: pointer;
+    box-shadow: 0 0 10px white;
+    font-weight: bolder;
+    color: red;
+}
